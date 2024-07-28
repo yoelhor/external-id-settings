@@ -4,7 +4,7 @@ function Add-ConditionalAccessPolicy {
     param (
         $PolicyName,
         $AppId
-    )
+    ) 
 
     # Define the conditional access policy
     $params =  @{
