@@ -10,7 +10,7 @@ function Add-ConditionalAccessPolicy {
     $params =  @{
         templateId =  $undefinedVariable
         displayName = $PolicyName
-        state = "enabled"
+        state = "disabled"
         sessionControls =  $undefinedVariable
         conditions =  @{
             userRiskLevels =  @()
