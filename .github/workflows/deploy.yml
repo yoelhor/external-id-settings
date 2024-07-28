@@ -52,7 +52,7 @@ build:
         ClientId: ${{ secrets.ClientId }}
         ClientSecret: ${{ secrets.ClientSecret }}
         WebAppId: ${{ vars.WebAppId }}
-        run: |
+        run: | 
         Write-Host "Connect to Microsoft Entra ID with app ID and app secret"
         $SecuredPassword = ConvertTo-SecureString -String "$env:ClientSecret" -AsPlainText -Force
         $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "$env:ClientId", $SecuredPassword
