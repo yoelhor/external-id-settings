@@ -1,2 +1,2 @@
-# external-id-settings
-My External ID tenant settings
+# My Microsoft Entra external ID settings
+
