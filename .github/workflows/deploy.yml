@@ -4,16 +4,16 @@ name: Test Graph PowerShell
 # Controls when the workflow will run
 on:
 # Triggers the workflow on push request events but only for the "main" branch
-push:
-    branches: [ "main" ]  
+ push:
+  branches: [ "main" ]  
 
 # Allows you to run this workflow manually from the Actions tab
-workflow_dispatch:
+ workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 # This workflow contains a single job called "build"
-build:
+ build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -32,8 +32,8 @@ build:
       id: cacher
       uses: actions/cache@v3
       with:
-      path: "~/.local/share/powershell/Modules"
-      key: ${{ runner.os }}-MicrosoftGraphBeta
+       path: "~/.local/share/powershell/Modules"
+       key: ${{ runner.os }}-MicrosoftGraphBeta
 
     # Install Microsoft Graph PowerShell modules
     - name: Install required PowerShell modules
